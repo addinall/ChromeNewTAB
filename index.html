@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Chromenewtab by addinall</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Chromenewtab</h1>
+        <p>Get rid of the messy CHROME NEW TAB Page forever!</p>
+        <p class="view"><a href="https://github.com/addinall/ChromeNewTAB">View the Project on GitHub <small>addinall/ChromeNewTAB</small></a></p>
+        <ul>
+          <li><a href="https://github.com/addinall/ChromeNewTAB/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/addinall/ChromeNewTAB/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/addinall/ChromeNewTAB">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="get-rid-of-chrome-new-tab-page" class="anchor" href="#get-rid-of-chrome-new-tab-page"><span class="octicon octicon-link"></span></a>Get RID of Chrome NEW TAB Page</h1>
+
+<p>Judging by a Google search, it seems a LOT of people are rather unimpressed with the new NEW TAB page.  Me included.</p>
+
+<p>So here is a little routine that can BANISH that messy page from hell and replace it with something you like.</p>
+
+<p>Firstly create a directory newtab (or sumptin)</p>
+
+<p>Inside it you are going to create a file called</p>
+
+<p>manifest.json - in it</p>
+
+<pre><code>{ 
+    "manifest_version": 2, 
+    "name": "StupidBoxes", 
+    "version": "1.0", 
+    "description": "Improving GOOGLE", 
+    "chrome_url_overrides" : { 
+        "newtab": "newtab.html" 
+    } 
+}
+</code></pre>
+
+<p>That's mine, you get the idea.</p>
+
+<p>then create your own newtab.html. Here is mine</p>
+
+<div class="highlight highlight-1"><pre>&lt;html&gt;
+
+    &lt;head&gt;
+        &lt;title&gt;Addinall's Override TAB Page&lt;/title&gt;
+
+        &lt;style&gt;
+        body {
+            background-image: url('images/cerebus-newtab.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        &lt;/style&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;
+</pre></div>
+
+<p>You can stick whatever you fancy in your newtab page now. The omnibar up the top still does a Google search.</p>
+
+<p>Then go to Extensions. Load unpacked extensions in Developer mode, and you are up and away!</p>
+
+<h2>
+<a name="mark-addinall" class="anchor" href="#mark-addinall"><span class="octicon octicon-link"></span></a>Mark Addinall</h2>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/addinall">addinall</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
