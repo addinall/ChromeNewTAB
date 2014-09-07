@@ -1,27 +1,44 @@
 <html>
     <head>
-        <title>Addinall's Override TAB Page</title>
+<!-- 
+ vim: set expandtab tabstop=4 shiftwidth=4 autoindent smartindent:
+//---------------------------------------------------------
+// CAPTAIN  SLOG
+//---------------------------------------------------------
+//
+//  FILE:       newtab.html
+//  SYSTEM:     GOOGLE Chrome extention 
+//  AUTHOR:     Mark Addinall
+//  DATE:       01/09/2014
+//  SYNOPSIS:   Ten zillion people around the net were complaining
+//              about the newTAB page GOOGLE launched on everyone.
+//              I agree.  I sucks.  So I wrote this to give myself
+//              a less ugly new TAB page.  It is really simple so steal 
+//              it and modify it to your requirements.
+-->
 
-        <style>
-            body {
-                background-image: url('images/cerebus-newtab2.jpg');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
-                    width: 100%;
-                    height: 100%;
-            }
+    <title>Addinall's Override TAB Page</title>
+
+    <style>
+        body {
+             background-image: url('images/cerebus-newtab2.jpg');
+             background-repeat: no-repeat;
+             background-position: center;
+             background-size: cover;
+             width: 100%;
+             height: 100%;
+        }
 
            
 
-h1{
-  font-family: MarkerFelt-Thin, "Comic Sans MS";
-  font-size:50px;
-  font-weight:normal;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
+    h1{
+        font-family: MarkerFelt-Thin, "Comic Sans MS";
+        font-size:50px;
+        font-weight:normal;
+        color: #F2B93D;
+        margin: 0;
+        padding: 0;
+    }
 
 .hello {
   position: absolute;
@@ -30,22 +47,23 @@ h1{
 }
 
 .google {
-	position:absolute;
-	bottom: 5px;
-	left: 5px;
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
 }
 
  
-        </style>
+    </style>
     </head>
 
     <body>
-    	<div class="hello">
-    		<h1>NewTAB SLAVE!!!</h1>
-	</div>
-	<div class="google">
-		<a href="http://www.google.com.au"><img src="images/google.png" alt="GOOGLE"></a>
-	</div>
+        <div class="hello">
+            <h1>NewTAB SLAVE!!!</h1>
+    </div>
+    <div class="google">
+        <a href="http://www.google.com.au"><img src="images/google.png" alt="GOOGLE">
+        </a>
+    </div>
     </body>
 
 </html>
